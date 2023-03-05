@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>Реєстрація</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+  <link href="https://getbootstrap.com/docs/4.0/examples/signin/signin.css" rel="stylesheet" crossorigin="anonymous"/>
+</head>
+<body>
+<div class="container">
+  <form class="form-signin" method="get" action="/persons/json">
+    <h2 class="form-signin-heading text-center">Choose fields for your JSON</h2>
+    <p>
+      <label for="amount" class="sr-only ">How many items you need?</label>
+      <input type="number" min="1" id="amount" name="amount" class="form-control" placeholder="Amount" required autofocus>
+    </p>
+     <ul class="list-group mb-3">
+      <li class="list-group-item pt-1 pb-1 pl-2" th:each="field: ${fields}">
+        <div class="form-check form-check-inline ml-4 mb-0 align-middle">
+          <input class="form-check-input mt-2" type="checkbox" name="fields" th:value="${field}" th:id="${field}">
+          <label class="form-check-label pl-1" th:for="${field}" th:text="${field}">
+            Empty label
+          </label>
+        </div>
+      </li>
+    </ul>
+    <button class="btn btn-lg btn-primary btn-block" type="submit">Get JSON</button>
+  </form>
+</div>
+</body></html>
