@@ -20,9 +20,9 @@ public class QuickJsonGeneratorApp implements CommandLineRunner {
 			? "localhost"
 			: environment.getProperty("server.address");
 
-		System.out.println("===============================================");
-		System.out.println("Server is running on PORT: " + port);
-		System.out.println("URL: http://" + address + ":" + port);
-		System.out.println("===============================================");
+		System.out.println("===============================================\r\n");
+		System.out.println("\tServer is running on PORT: " + port);
+		System.out.println("\tURL: http://" + address + ":" + port);
+		System.out.println("\r\n===============================================");
 	}
 }
