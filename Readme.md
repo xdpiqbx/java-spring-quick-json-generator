@@ -46,7 +46,7 @@ You can change PORT in [`src/main/resources/application.yml`](src/main/resources
 
 ---
 
-To start App on Windows you can use `WinRunApp.bat` (already in project root folder)
+**[ You must have Maven installed!!! ]** To start App on Windows you can use `WinRunApp.bat` (already in project root folder)
 ```batch
 if not exist ".\target\QuickJsonGenerator.jar" (
     mvn clean install && java -jar .\target\QuickJsonGenerator.jar
@@ -57,7 +57,7 @@ if not exist ".\target\QuickJsonGenerator.jar" (
 
 ---
 
-To start App on Unix you can use `UnixRunApp.sh` (already in project root folder)
+**[ You must have Maven installed!!! ]** To start App on Unix you can use `UnixRunApp.sh` (already in project root folder)
 ```bash
 if [ ! -f "./target/QuickJsonGenerator.jar" ]; then
     mvn clean install && java -jar ./target/QuickJsonGenerator.jar
