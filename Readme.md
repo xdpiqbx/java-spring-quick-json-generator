@@ -1,12 +1,14 @@
-## Quick JSON Generator
+## Your local free "Quick JSON Generator"
+
+```text
+Java
+Spring MVC
+Thymeleaf
+```
 
 ---
 
-### If you need free Quick JSON Generator =)
-
----
-
-#### Just choose the fields you need and click on the button
+### Just select the quantity and fields you need and click on the button below
 
 ![001.jpg](images%2F001.jpg)
 ![002_1.jpg](images%2F002_1.jpg)
@@ -17,6 +19,8 @@
 
 ![003.jpg](images%2F003.jpg)
 ![004.jpg](images%2F004.jpg)
+
+---
 
 #### For today developed just short entity - Person
 
@@ -34,13 +38,6 @@
 9. `city`: array (there are 162 in array)
 10. `address`: Street, City, State, ZIP code. (there are 124 streets in array)
 11. `postalZipCode`: Integer 9 random digits
-
----
-
-- Java
-- Spring MVC
-- Thymeleaf
-- JSON
 
 ---
 
