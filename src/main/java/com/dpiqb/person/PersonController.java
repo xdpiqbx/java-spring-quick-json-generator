@@ -32,7 +32,7 @@ public class PersonController {
     ModelAndView result = new ModelAndView(jsonView);
     result.addObject("persons", personsDTO);
     long stopTime = System.nanoTime();
-    System.out.println("Result === " + (stopTime - startTime));
+    System.out.println("Result generated in: [" + (stopTime - startTime) + "] nanoseconds");
     return result;
   }
 }

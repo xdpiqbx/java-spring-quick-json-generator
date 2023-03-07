@@ -15,7 +15,6 @@ public class State {
    "Kharkiv","Kherson","Khmelnytskyi","Kirovohrad","Kyiv","Luhansk","Lviv","Mykolaiv","Odessa","Poltava","Rivne",
    "Sumy","Ternopil","Vinnytsia","Volyn","Zakarpattia","Zaporizhzhia","Zhytomyr","Autonomous Republic of Crimea"};
   public String get(){
-    System.out.println("STATES.length = " + STATES.length);
     return Util.returnRandomFromArray(STATES);
   }
 }

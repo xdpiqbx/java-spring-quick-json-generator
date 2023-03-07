@@ -29,7 +29,6 @@ public class Country {
     "Vanuatu","Vatican City (Holy See)","Venezuela","Vietnam","Yemen","Zambia","Zimbabwe"};
 
   public String get(){
-    System.out.println("COUNTRIES.length = " + COUNTRIES.length);
     return Util.returnRandomFromArray(COUNTRIES);
   }
 }

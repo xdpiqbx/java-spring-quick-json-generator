@@ -23,7 +23,6 @@ public class City {
     "Washington D.C.","Wroclaw","Zagreb","Zurich"};
 
   public String get(){
-    System.out.println("CITIES.length = " + CITIES.length);
     return Util.returnRandomFromArray(CITIES);
   }
 }

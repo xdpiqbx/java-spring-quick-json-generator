@@ -33,7 +33,6 @@ public class Address {
     "Maximilianstrasse","Melrose Avenue","Menlo Avenue","Meridian Street","Midosuji Avenue","Mill Street",
     "Mission Street","Monmouth"};
   public String generate(String city, String state, Integer zip){
-    System.out.println("STREETS.length = " + STREETS.length);
     return String.format(
       "%s, %s, %s, %d",
       Util.returnRandomFromArray(STREETS),
